@@ -1,0 +1,11 @@
+<ul>
+    <% @tasks.each do |task| %>
+        <li><%= task.name %></li>
+    <% end %>
+</ul>
+
+<%= form_for @newtask, url: { action: "create" } do |task_form| %>
+    <%= task_form.label :name %>
+    <%= task_form.text_field :name %>
+    <%= task_form.submit "Create" %>
+<% end %>
