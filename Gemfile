@@ -1,7 +1,13 @@
 source 'https://rubygems.org'
 
+gem 'capistrano'
+gem 'capistrano-rbenv'
+gem 'capistrano-rails'
+gem 'capistrano-bundler'
+
 gem 'rails', '4.0.2'
 gem 'sqlite3'
+gem 'thin'
 gem 'pg'
 gem 'less-rails'
 gem 'therubyracer'
